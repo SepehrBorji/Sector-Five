@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | SECTOR FIVE</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" tabindex="-1" style="width: 100%; height: 100%; background: #231F20"></canvas>
     <script src="Build/Sector-Five.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Sector-Five.data.br",
-        frameworkUrl: "Build/Sector-Five.framework.js.br",
-        codeUrl: "Build/Sector-Five.wasm.br",
+        dataUrl: "Build/Sector-Five.data.unityweb",
+        frameworkUrl: "Build/Sector-Five.framework.js.unityweb",
+        codeUrl: "Build/Sector-Five.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Dr.Apple",
         productName: "SECTOR FIVE",
